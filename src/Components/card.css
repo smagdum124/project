@@ -1,0 +1,42 @@
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 3vw auto;
+}
+
+.card {
+  position: relative;
+  width: 30%;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Move the card up slightly on hover */
+}
+
+.card-bg {
+  width: 100%;
+  height: auto;
+}
+
+.inner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.union-image {
+  width: 50%;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+h3 {
+  color: #fff;
+  font-size: 18px;
+  margin: 0;
+}
