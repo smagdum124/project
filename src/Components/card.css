@@ -1,13 +1,16 @@
+/* Base styles */
+
 .card-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap; /* Allow cards to wrap onto new lines */
   width: 90%;
   margin: 3vw auto;
 }
 
 .card {
   position: relative;
-  width: 30%;
+  width: calc(30% - 20px); /* Adjusted width to accommodate margins */
   margin-bottom: 20px;
   transition: transform 0.3s ease; /* Add transition for smooth effect */
 }
@@ -39,4 +42,12 @@ h3 {
   color: #fff;
   font-size: 18px;
   margin: 0;
+}
+
+/* Media query for small devices */
+@media (max-width: 600px) {
+
+  .card {
+    width: 100%;
+  }
 }

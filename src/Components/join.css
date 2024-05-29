@@ -1,3 +1,4 @@
+/* Base styles */
 
 .join_container {
   display: flex;
@@ -65,9 +66,8 @@
   margin-top: 2vw;
 }
 
-.join_card1 {
-  margin-bottom: 1vw; 
-  background-image: url("../assets//SignUpBg.png");
+.join_card1, .join_card2, .join_card3, .join_card4 {
+  margin-bottom: 1vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -75,36 +75,11 @@
   height: 15vw;
   border-radius: 20px;
 }
-.join_card2 {
-  margin-bottom: 1vw; 
-  background-image: url("../assets/fourthBg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 30vw;
-  height: 15vw;
-  border-radius: 20px;
-}
-.join_card3 {
-  margin-bottom: 1vw; 
-  background-image: url("../assets/thirdBg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 30vw;
-  height: 15vw;
-  border-radius: 20px;
-}
-.join_card4 {
-  margin-bottom: 1vw; 
-  background-image: url("../assets/seondBg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 30vw;
-  height: 15vw;
-  border-radius: 20px;
-}
+
+.join_card1 { background-image: url("../assets/SignUpBg.png"); }
+.join_card2 { background-image: url("../assets/fourthBg.png"); }
+.join_card3 { background-image: url("../assets/thirdBg.png"); }
+.join_card4 { background-image: url("../assets/seondBg.png"); }
 
 .card_txt {
   display: flex;
@@ -118,80 +93,108 @@
   color: white;
 }
 
-.card_txt0 {
+.card_txt0, .card_txt1 {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  margin-top: 20px;
 }
-.card_txt0 h2{
-    font-size: 1vw; 
-    margin: 0; 
-    color: white;
-    padding-left: 5px;
+
+.card_txt0 h2, .card_txt1 h2 {
+  font-size: 1vw; 
+  margin: 0; 
+  color: white;
+  padding-left: 5px;
 }
-.card_txt0 img{
-    width: 1vw; 
-}
-.card_txt1 {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  
-  
+
+.card_txt0 img, .card_txt1 img {
+  width: 1vw;
 }
 
 .card_txt1 h2 {
-  font-size: 1vw;
-  margin: 0; 
-  color: white;
   padding-top: 50px;
-  padding-left: 5px;
+}
 
+.card_txt1 img {
+  padding-top: 50px;
+  padding-right: 5px;
 }
-.center-img {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.center-img, .center-img2, .center-img3, .center-img4 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.center-img2 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 3.3vw;
-}
-.center-img3 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 3.3vw;
-}
-.center-img4 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 3.3vw;
+
+.center-img2, .center-img3, .center-img4 {
+  padding-top: 3.3vw;
 }
 
 .center-img img {
-    height: auto; 
+  height: auto;
 }
 
 .center-img h3 {
-    position: absolute;
-    color: white;
-    font-size: 1.2vw; 
-    text-align: center;
+  position: absolute;
+  color: white;
+  font-size: 1.2vw;
+  text-align: center;
 }
 
+/* Media query for small devices */
+@media (max-width: 600px) {
+  .join_container {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+    width: 92%;
+  }
 
-.card_txt1 img {
-  width: 1vw; 
-  padding-top: 50px;
-  padding-right: 5px;
- 
-} 
+  .join_img {
+    display: none;
+  }
+
+  .Join_content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .join_small_txt {
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .join_small_txt h2 {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .join_small_txt p {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .join_card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .join_card1, .join_card2, .join_card3, .join_card4 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .card_txt h2 {
+    font-size: 1.5rem;
+  }
+
+  .card_txt0 h2, .card_txt1 h2 {
+    font-size: 1.5rem;
+    padding-top: 0;
+  }
+
+  .card_txt0 img, .card_txt1 img {
+    width: 5%;
+  }
+}

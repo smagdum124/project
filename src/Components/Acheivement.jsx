@@ -3,6 +3,7 @@ import pose2 from "../assets/flying.png";
 import know from "../assets/Group 9222.png";
 import arrow from "../assets/Group 9268.png";
 import rectangle from "../assets/Rectangle 4058.png";
+import whiteVector from "../assets/WhiteVector.png";
 
 function Achievement() {
   const achievementRef = useRef(null);
@@ -46,26 +47,20 @@ function Achievement() {
         <div className="achievement-containt">
           <h2 className="achiev-txt2">Already above</h2>
           <h2 className="achiev-txt3">
-            <span>the</span> <span className="highlight">Surface</span>
+            the <span className="highlight">Surface</span>
           </h2>
           <div className="achievement-inner">
-            <div className="img-txt">
-              <img src={rectangle} alt="" />
-              <div className="inner-txt">
-                <h2>24K</h2>
-                <p>Projects Launched</p>
-              </div>
+            <div className="inner-txt">
+              <h2>24K</h2>
+              <p>Projects <br /> Launched</p>
             </div>
-            <div className="img-txt">
-              <img src={rectangle} alt="" />
-              <div className="inner-txt">
-                <h2>24K</h2>
-                <p>Projects Launched</p>
-              </div>
+            <div className="inner-txt">
+              <h2>2.3M</h2>
+              <p>Members in Community</p>
             </div>
 
             <div className="img-txt1">
-              <img src={arrow} alt="" />
+              <img src={whiteVector} alt="" />
             </div>
           </div>
         </div>

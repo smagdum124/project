@@ -1,11 +1,11 @@
 import React from "react";
 import {
-    FaTelegramPlane,
-    FaTwitter,
-    FaDiscord,
-    FaEnvelope,
-  } from "react-icons/fa";
-  
+  FaTelegramPlane,
+  FaTwitter,
+  FaDiscord,
+  FaEnvelope,
+} from "react-icons/fa";
+
 import logo from "../assets/Group 8763.png";
 import "./style.css";
 
@@ -29,6 +29,9 @@ function NavBar() {
         </a>
         <a href="#" className="icon">
           <FaDiscord />
+        </a>
+        <a href="#" className="rights">
+          All rights reserved
         </a>
       </div>
     </div>

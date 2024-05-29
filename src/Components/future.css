@@ -1,125 +1,9 @@
-/* @font-face {
-  font-family: Megatoyaitalic;
-  src: url("../assets/fonts/BD Megatoya Light Italic.ttf");
-}
-
-
-.future_container {
-  background-image: url("../assets/future.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 93%;
-  height: 60vh;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 10px;
-  border: 1px solid rgb(107, 114, 128);
-}
-
-.future_content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-  color: white;
-}
-
-.future_content h2 {
-  font-size: 4rem;
-  margin: 0;
-}
-
-.future_content span {
-  font-size: 2.5rem;
-  font-weight: lighter;
-  font-family: Megatoyaitalic;
-}
-
-.future_img {
-  width: 30%;
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-}
-
-.future_img img {
-  width: 35.5vw;
-}
-
-.future_card {
-  width: 22%;
-  height: 45%;
-  display: flex;
-  flex-direction: column;
-  background: white;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  justify-content: center;
-  justify-items: center;
-  flex-direction: column;
-  margin-right: 2vw;
-}
-
-.card_people {
-  margin-bottom: 1rem;
-}
-
-.inner_people {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 25px;
-}
-
-.inner_people h2 {
-  margin-right: 1.2rem;
-  margin: 2;
-  padding: 0;
-}
-
-.para {
-  color: black;
-  font-weight: lighter;
-  padding: 0px 25px;
-}
-
-.inner_people img {
-  width: 2vw;
-}
-
-.joinBtn {
-  display: flex;
-  justify-content: center;
-}
-
-.joinBtn button {
-  background-color: #b557fa;
-  color: white;
-  border: none;
-  padding: 0.5rem 5rem;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 1rem;
-  margin-bottom: 20px;
-  border: 1px solid #b557fa;
-}
-
-.joinBtn button:hover {
-  background-color: transparent;
-  color: black;
-} */
+/* Existing styles */
 
 @font-face {
   font-family: Megatoyaitalic;
   src: url("../assets/fonts/BD Megatoya Light Italic.ttf");
 }
-
-/* Existing styles */
 
 .future_container {
   background-image: url("../assets/future.png");
@@ -148,15 +32,18 @@
   transform: translateY(50px); /* Initially move content down */
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
+
 .future_content h2 {
   font-size: 4rem;
   margin: 0;
 }
+
 .future_content span {
   font-size: 2.5rem;
   font-weight: lighter;
   font-family: Megatoyaitalic;
 }
+
 .future_img {
   width: 30%;
   display: flex;
@@ -166,16 +53,11 @@
   transform: translateY(50px);
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
-.future_img {
-  width: 30%;
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-}
 
 .future_img img {
   width: 35.5vw;
 }
+
 .future_card {
   width: 22%;
   height: 45%;
@@ -249,4 +131,74 @@
 .joinBtn button:hover {
   background-color: transparent;
   color: black;
+}
+
+/* Media query for small devices */
+@media (max-width: 600px) {
+  .future_container {
+    background-image: url("../assets/forMobile.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    width: 92%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .future_content,
+  .future_img,
+  .future_card {
+    opacity: 1 !important; /* Ensure content is visible */
+    transform: translateY(0) !important; /* Move content back to original position */
+    transition: none !important; /* Disable transitions */
+  }
+
+  .future_content {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .future_card {
+    width: 70%;
+    margin: 10px auto;
+  }
+
+  .future_img {
+    width: 100%;
+  }
+
+  .future_content {
+    order: 1;
+  }
+
+  .future_card {
+    order: 2;
+  }
+
+  .future_img {
+    order: 3;
+  }
+
+  .future_content h2 {
+    font-size: 5rem;
+  }
+
+  .future_content span {
+    font-size: 3.5rem;
+  }
+
+  .future_img img {
+    width: 100%;
+    padding-bottom: 0px;
+  }
+
+  .inner_people img {
+    width: 10vw;
+  }
+
+  .joinBtn button {
+    padding: 0.5rem 2rem;
+    font-size: 0.9rem;
+  }
 }

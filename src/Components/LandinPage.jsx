@@ -19,7 +19,6 @@ function LandinPage() {
       {/* main section  */}
       <MainSection />
       {/* Achievment section  */}
-      {/* <Achievement /> */}
       <Acheivement/>
       {/* how to join page  */}
       <HowToJoin />
