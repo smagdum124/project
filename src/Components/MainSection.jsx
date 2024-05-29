@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import mainImg from "../assets/Group 9181.png";
-import './style.css'; // Make sure this path is correct
+import './style.css';
 
 function MainSection() {
   const contentRef = useRef(null);

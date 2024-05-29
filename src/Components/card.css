@@ -3,20 +3,20 @@
 .card-container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; /* Allow cards to wrap onto new lines */
+  flex-wrap: wrap;
   width: 90%;
   margin: 3vw auto;
 }
 
 .card {
   position: relative;
-  width: calc(30% - 20px); /* Adjusted width to accommodate margins */
+  width: calc(30% - 20px);
   margin-bottom: 20px;
-  transition: transform 0.3s ease; /* Add transition for smooth effect */
+  transition: transform 0.3s ease; 
 }
 
 .card:hover {
-  transform: translateY(-5px); /* Move the card up slightly on hover */
+  transform: translateY(-5px); 
 }
 
 .card-bg {

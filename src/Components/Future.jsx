@@ -18,7 +18,7 @@ function Future() {
         });
       },
       {
-        threshold: 0.5, // Adjust this value to determine when the content should become visible
+        threshold: 0.5, 
       }
     );
 

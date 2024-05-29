@@ -1,8 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import pose2 from "../assets/flying.png";
 import know from "../assets/Group 9222.png";
-import arrow from "../assets/Group 9268.png";
-import rectangle from "../assets/Rectangle 4058.png";
 import whiteVector from "../assets/WhiteVector.png";
 
 function Achievement() {
