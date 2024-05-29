@@ -1,0 +1,50 @@
+.footer {
+  width: 90%;
+  margin: auto;
+}
+
+.headerf {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1vw 0;
+}
+
+.logof img {
+  max-height: 50px;
+}
+
+.social-iconsf {
+  display: flex;
+  align-items: center;
+}
+
+.iconf {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.social-iconsf .iconf {
+  margin-left: 1rem;
+}
+
+.rightsf {
+  display: none;
+}
+
+.iconf:hover,
+.rightsf:hover {
+  color: #ddd;
+}
+
+@media (max-width: 600px) {
+  .social-iconsf {
+    display: none;
+  }
+  .rightsf {
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
+}

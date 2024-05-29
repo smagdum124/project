@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    color:white
+  }
+  
+  .logo img {
+    max-height: 50px; /* Adjust as needed */
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-icons .icon {
+    margin-left: 1rem;
+  }
+  .social-icons .rights {
+    display: none;
+  }
+  @media (max-width: 600px) {
+    .social-icons .icon {
+      display: block;
+    }
+    .social-icons .rights {
+      display: none;
+    }
+  }

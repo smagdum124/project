@@ -6,7 +6,7 @@ import MainSection from "./MainSection";
 import HowToJoin from "./HowJoin";
 import Collaborate from "./Collaborate";
 import Future from "./Future";
-import NavBar from "./NavBar";
+import Footer from "./Footer"
 import "./style.css"
 import Acheivement from "./Acheivement";
 
@@ -28,7 +28,7 @@ function LandinPage() {
       <Future />
       {/* footer  */}
       <div className="footer">
-        <NavBar />
+        <Footer/>
       </div>
     </>
   );
