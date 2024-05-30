@@ -14,7 +14,7 @@
   justify-content: space-between;
   border: 1px solid rgb(107, 114, 128);
   height: auto;
-  margin: 2vw;
+  margin: 2.5vw;
   border-radius: 10px;
   padding: 2vw;
   background: linear-gradient(
@@ -93,11 +93,12 @@
   font-size: 1rem;
   color: white;
   background-color: #b557fa;
-  border: none;
+  /* border: none; */
   border-radius: 20px;
   margin-right: 1rem;
   cursor: pointer;
 }
+
 
 .button1 {
   padding: 0.6rem 1.5rem;
@@ -109,9 +110,14 @@
   margin-right: 1rem;
   cursor: pointer;
 }
+.button1:hover{
+  /* border: solid 1px #b557fa; */
+  color: #b557fa;
+}
 
 .button:hover {
-  background-color: #553c9a;
+  background-color:transparent;
+  border: solid 1px #b557fa;
 }
 
 .group-img {
@@ -149,9 +155,8 @@
 
   .content {
     display: flex;
-    justify-content: space-around;
     position: relative;
-    left: -52px;
+    left: -45px;
   }
 
   .content-txt {
@@ -197,12 +202,13 @@
 .main-img {
   flex: 1;
   padding-right: 2rem;
-  width: 24%;
+  /* width: 24%; */
 }
 
 .main-img img {
   width: 100%;
   height: auto;
+  
 }
 
 .main-content {
@@ -225,8 +231,8 @@
   display: flex;
   gap: 1rem;
   margin-bottom: 2rem;
-  width: 90%;
-  overflow-x: hidden;
+  width: auto;
+  /* overflow-x: hidden; */
   white-space: nowrap;
 }
 
@@ -260,7 +266,7 @@ button {
 
 .main-txt h2 {
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 3rem;
   color: white;
 }
 
@@ -306,203 +312,246 @@ button {
     order: 2;
   }
 }
+@media (min-width: 1280px) {
 
-/* Achievment css */
-.achievement-container {
-  border: 1px solid #a0aec0;
-  border-radius: 20px;
-  background-color: white;
-  padding: 20px;
-  width: 90%;
-  margin: 2vw auto;
-  height: 80vh;
-}
+  .main-img {
+    flex: 1;
+    padding-right: 2rem;
+    width: 24%;
+    display: flex;
+    align-items: flex-end; /* Align the image to the bottom */
+  }
 
-.achievement-txt {
-  padding-left: 4vw;
-  margin: 0;
-  font-size: 4rem;
-  background: -webkit-linear-gradient(left, black, white);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-}
+  .main-img img {
+    width: 100%;
+    height: auto;
+  }
 
-.achievement-main {
-  display: flex;
-  position: relative;
 }
-
-.achievement-img {
-  width: 30%;
-  position: relative;
-}
-
-.modelPose {
-  width: 37vw;
-  position: relative;
-  bottom: 30vh;
-}
-
-.know {
-  position: relative;
-  top: -50%;
-  left: 20%;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-}
-
-.achievement-img span {
-  position: relative;
-  top: -54%;
-  left: 27%;
-  color: #b557fa;
-}
-
-.achievement-containt {
-  width: 60%;
-  padding-left: 2vw;
-}
-
-.achiev-txt2,
-.achiev-txt3 {
-  font-size: 5rem;
-  position: relative;
-  line-height: 1;
-  margin: 0px;
-}
-
-.achiev-txt3 {
-  font-family: Megatoyaitalic;
-}
-.achiev-txt3 span {
-  font-weight: bold;
-  font-family: Megatoya;
-}
-.highlight {
-  color: #b557fa;
-}
-
-.achievement-inner {
-  display: flex;
-  margin-top: 2vh;
-  justify-content: space-around;
-}
-
-.inner-txt {
-  height: 6vw;
-  width: 14vw;
-  background-color: black;
-  border-radius: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.inner-txt h2 {
-  color: white;
-  padding: 10px;
-}
-
-.inner-txt p {
-  color: white;
-  padding: 0.6vw;
-}
-
-.img-txt1 {
-  height: 6vw;
-  width: 6vw;
-  background-color: #b557fa;
-  border-radius: 20px;
-}
-
-.img-txt1 img {
-  padding: 25px;
-  width: 2vw;
-}
-
-@media (max-width: 600px) {
+  /* Achievment css */
   .achievement-container {
-    padding: 10px 0;
-    margin: 10px auto;
-    width: 95%;
+    border: 1px solid #a0aec0;
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+    width: 91%;
+    margin: 2vw auto;
+    height: 80vh;
   }
 
   .achievement-txt {
-    padding-left: 0;
-    text-align: center;
-    font-size: 3rem;
+    padding-left: 4vw;
+    margin: 0;
+    font-size: 4rem;
+    background: -webkit-linear-gradient(left, black, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    animation: slideIn 1s ease-in-out; /* Animation for heading */
   }
 
   .achievement-main {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    position: relative;
   }
 
   .achievement-img {
-    width: 70%;
-    text-align: center;
+    width: 30%;
+    position: relative;
   }
 
   .modelPose {
-    width: 123%;
-    bottom: 0;
+    width: 37vw;
     position: relative;
-    bottom: 28vw;
-    transform: translateX(-44px);
+    bottom: 30vh;
   }
 
   .know {
-    left: 35px;
     position: relative;
-    top: -81px;
+    top: -50%;
+    left: 20%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    animation: slideIn 1s ease-in-out; /* Animation for "Know more" image */
+  }
+
+  .know span {
+    animation: slideIn 1s ease-in-out; /* Animation for "Know more" span */
   }
 
   .achievement-img span {
     position: relative;
-    top: -28vw;
-    left: 14px;
-    margin: 0 auto;
-    display: block;
-    font-size: 2rem;
+    top: -54%;
+    left: 27%;
+    color: #b557fa;
   }
 
   .achievement-containt {
-    width: 100%;
-    padding-left: 0;
-    text-align: center;
-    position: relative;
-    top: -64vw;
+    width: 60%;
+    padding-left: 2vw;
+    animation: slideIn 1s ease-in-out; /* Animation for content */
   }
 
   .achiev-txt2,
   .achiev-txt3 {
-    font-size: 3rem;
-    text-align: center;
+    font-size: 5rem;
+    position: relative;
+    line-height: 1;
+    margin: 0px;
+  }
+
+  .achiev-txt3 {
+    font-family: Megatoyaitalic;
+  }
+
+  .achiev-txt3 span {
+    font-weight: bold;
+    font-family: Megatoya;
+  }
+
+  .highlight {
+    color: #b557fa;
   }
 
   .achievement-inner {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 18vw;
+    display: flex;
+    margin-top: 14vh;
+    justify-content: space-around;
   }
+
   .inner-txt {
-    width: 61vw;
-    height: 18vw;
-    margin: 3vw;
+    height: 6vw;
+    width: 14vw;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
   }
+
   .inner-txt h2 {
-    padding: 3px 15px;
+    color: white;
+    padding: 10px;
   }
 
   .inner-txt p {
-    padding: 3px 35px;
+    color: white;
+    padding: 0.6vw;
   }
 
   .img-txt1 {
-    display: none;
+    height: 6vw;
+    width: 6vw;
+    background-color: #b557fa;
+    border-radius: 20px;
   }
-}
+
+  .img-txt1 img {
+    padding: 25px;
+    width: 2vw;
+  }
+
+  @media (max-width: 600px) {
+    .achievement-container {
+      padding: 10px 0;
+      margin: 10px auto;
+      width: 95%;
+    }
+
+    .achievement-txt {
+      padding-left: 0;
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    .achievement-main {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .achievement-img {
+      width: 70%;
+      text-align: center;
+    }
+
+    .modelPose {
+      width: 123%;
+      bottom: 0;
+      position: relative;
+      bottom: 28vw;
+      transform: translateX(-44px);
+    }
+
+    .know {
+      left: 35px;
+      position: relative;
+      top: -81px;
+    }
+
+    .achievement-img span {
+      position: relative;
+      top: -28vw;
+      left: 14px;
+      margin: 0 auto;
+      display: block;
+      font-size: 2rem;
+    }
+
+    .achievement-containt {
+      width: 100%;
+      padding-left: 0;
+      text-align: center;
+      position: relative;
+      top: -64vw;
+    }
+
+    .achiev-txt2,
+    .achiev-txt3 {
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    .achievement-inner {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 18vw;
+    }
+    .inner-txt {
+      width: 61vw;
+      height: 18vw;
+      margin: 3vw;
+    }
+    .inner-txt h2 {
+      padding: 3px 15px;
+    }
+
+    .inner-txt p {
+      padding: 3px 35px;
+    }
+
+    .img-txt1 {
+      display: none;
+    }
+  }
+
+  /* Add animation for visible content */
+  .visible .achievement-containt,
+  .visible .achievement-txt,
+  .visible .know span {
+    animation: slideIn 1s ease-in-out;
+  }
+
+  /* Define animation keyframes */
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 /* collaborate page  */
 .collaborate_container {
@@ -511,7 +560,7 @@ button {
   border-radius: 20px;
   padding: 20px;
   height: 67vh;
-  width: 90%;
+  width: 91%;
   margin: 2vw auto;
   background-color: white;
   background-image: linear-gradient(
@@ -531,26 +580,38 @@ button {
   width: 45%;
   position: relative;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end; /* Changed from center to flex-end */
 }
 
 .collab_img .vector {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 13px;
+  left: 17px;
+  width: 2vw;
+}
+
+.collab-mail {
+  left: 0px;
+  position: absolute;
+  top: 30px;
+  width: auto;
 }
 
 .collab_img h3 {
-  position: absolute;
+  position: relative;
   top: 13px;
   left: 50px;
   color: #6b46c1;
   margin: 0;
-  font-size: 1.8vw;
+  font-size: 1.5vw;
 }
 
 .collab_img .pose4 {
-  width: 28vw;
+  padding: 0;
+  width: 25vw;
+  position: absolute;
+  bottom: 0; /* Ensure it touches the bottom */
+  margin: 0;
 }
 
 .collab_form {
@@ -615,6 +676,7 @@ form {
 }
 
 .button_group button {
+  white-space: nowrap;
   padding: 1em 5em;
   background-color: #b557fa;
   color: white;
@@ -641,11 +703,15 @@ form {
   flex: 2;
 }
 
-#subject,
+#subject {
+  flex: 4; /* Increased width for the subject input */
+}
+
 #phone,
 #company {
   flex: 3;
 }
+
 
 /* Media query for small devices */
 @media (max-width: 600px) {
@@ -709,19 +775,30 @@ form {
   margin: 0 auto;
   overflow-x: auto;
   white-space: nowrap;
-  transform: translateY(50px);
-  opacity: 0;
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .logo_container.visible {
-  transform: translateY(0); 
-  opacity: 1; 
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Apply grayscale and lower opacity to images initially */
+.logo_container img {
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: filter 0.5s ease, opacity 0.5s ease;
+  cursor: pointer;
+}
+
+.logo_container.visible img {
+  filter: grayscale(0%);
+  opacity: 1;
 }
 
 /* Media query for small devices */
 @media (max-width: 600px) {
   .logo_container {
-    overflow-x: scroll; 
+    overflow-x: scroll;
   }
 }

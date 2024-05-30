@@ -4,14 +4,14 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 90%;
-  margin: 3vw auto;
+  width: 94%;
+  margin: 1vw auto;
 }
 
 .card {
   position: relative;
-  width: calc(30% - 20px);
-  margin-bottom: 20px;
+  width: calc(32.5% - 0px);
+  margin-bottom: 10px;
   transition: transform 0.3s ease; 
 }
 

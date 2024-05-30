@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import vector from "../assets/Group 9222.png";
 import pose4 from "../assets/pose9 1.png";
+import "./style.css"; // Ensure the CSS file is imported
 
 function Collaborate() {
   const formRef = useRef(null);
@@ -35,9 +36,11 @@ function Collaborate() {
   return (
     <div className="collaborate_container">
       <div className="collab_img">
-        <img className="vector" src={vector} alt="" />
-        <h3>Grab Mail</h3>
-        <img className="pose4" src={pose4} alt="" />
+        <div className="collab-mail">
+          <img className="vector" src={vector} alt="Vector Graphic" />
+          <h3>Grab Mail</h3>
+        </div>
+        <img className="pose4" src={pose4} alt="Pose Graphic" />
       </div>
       <div className="collab_form" ref={formRef}>
         <h2>Let's Collaborate</h2>
@@ -69,10 +72,14 @@ function Collaborate() {
           <div className="input_row">
             <div className="input_group wide">
               <label htmlFor="message">MESSAGE</label>
-              <input id="message" type="text" placeholder="Start Typing here " />
+              <input
+                id="message"
+                type="text"
+                placeholder="Start Typing here"
+              />
             </div>
             <div className="input_group button_group">
-              <button type="submit">Submit</button>
+              <button type="submit">Submit now </button>
             </div>
           </div>
         </form>

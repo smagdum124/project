@@ -9,7 +9,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 93%;
+  width: 94%;
   height: 60vh;
   margin: auto;
   display: flex;
@@ -58,8 +58,8 @@
 }
 
 .future_card {
-  width: 22%;
-  height: 45%;
+  width: 20%;
+  height: 61%;
   display: flex;
   flex-direction: column;
   background: white;
@@ -98,11 +98,14 @@
   margin: 2;
   padding: 0;
 }
-
+.inner_people h2{
+  font-size: 2rem;
+}
 .para {
   color: black;
   font-weight: lighter;
   padding: 0px 25px;
+  font-size: 1.rem;
 }
 
 .inner_people img {

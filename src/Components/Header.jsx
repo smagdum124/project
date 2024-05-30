@@ -18,7 +18,7 @@ function Header() {
             </div>
             <h1 className="content-txt2">of Launch</h1>
             <div className="button-group">
-              <button className="button">Join Now</button>
+              <button className="button">Join now</button>
               <button className="button1">How to Join?</button>
             </div>
           </div>

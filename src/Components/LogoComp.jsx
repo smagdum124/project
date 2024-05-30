@@ -4,9 +4,10 @@ import logo2 from "../assets/logos/logo2.png";
 import logo3 from "../assets/logos/logo3.png";
 import logo4 from "../assets/logos/logo4.png";
 import logo5 from "../assets/logos/logo5.png";
+import "./navbar.css"; // Ensure this path is correct
 
 function LogoComp() {
-  const logoRef = useRef(null);
+  const logosRef = useRef([]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -24,24 +25,31 @@ function LogoComp() {
       }
     );
 
-    if (logoRef.current) {
-      observer.observe(logoRef.current);
-    }
+    logosRef.current.forEach((logo) => {
+      if (logo) {
+        observer.observe(logo);
+      }
+    });
 
     return () => {
-      if (logoRef.current) {
-        observer.unobserve(logoRef.current);
-      }
+      logosRef.current.forEach((logo) => {
+        if (logo) {
+          observer.unobserve(logo);
+        }
+      });
     };
   }, []);
 
   return (
-    <div className="logo_container visible" ref={logoRef}>
-      <img src={logo1} alt="Logo 1" />
-      <img src={logo2} alt="Logo 2" />
-      <img src={logo3} alt="Logo 3" />
-      <img src={logo4} alt="Logo 4" />
-      <img src={logo5} alt="Logo 5" />
+    <div className="logo_container">
+      {[logo1, logo2, logo3, logo4, logo5].map((logo, index) => (
+        <img
+          key={index}
+          src={logo}
+          alt={`Logo ${index + 1}`}
+          ref={(el) => (logosRef.current[index] = el)}
+        />
+      ))}
     </div>
   );
 }

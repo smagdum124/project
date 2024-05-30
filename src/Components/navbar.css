@@ -1,35 +1,72 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative; /* To position social-icons absolutely */
+}
+
+.logo {
+  flex-grow: 1; /* Allow the logo container to grow and take available space */
+  display: flex;
+  justify-content: center; /* Center the logo horizontally */
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: white;
+  transition: color 0.3s, transform 0.3s, filter 0.3s; /* Add transition for smooth effect */
+}
+
+.icon:hover {
+  color: #B557FA;
+}
+
+.hover-effect {
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.hover-effect:hover {
+  transform: scale(1.1); /* Scale the image to 110% on hover */
+  filter: drop-shadow(0 0 5px #B557FA); /* Add a shadow effect with the desired color */
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  position: absolute; /* Position social icons absolutely */
+  right: 0; /* Align them to the right */
+}
+
+.social-icons .icon {
+  margin-left: 1rem;
+}
+
+/* Hide .rights class initially */
+.social-icons .rights {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column; /* Arrange items vertically */
+    padding: 1rem; /* Add some padding for spacing */
   }
-  
-  .icon {
-    font-size: 1.5rem;
-    color:white
+
+  .logo {
+    margin-bottom: 1rem; /* Add margin at the bottom for separation */
   }
-  
-  .logo img {
-    max-height: 50px; /* Adjust as needed */
-  }
-  
+
   .social-icons {
-    display: flex;
-    align-items: center;
+    position: static; /* Remove absolute positioning */
+    margin-top: 1rem; /* Add margin at the top for separation */
   }
-  
+
   .social-icons .icon {
-    margin-left: 1rem;
+    margin-left: 0.5rem; /* Adjust margin between icons */
   }
-  .social-icons .rights {
-    display: none;
-  }
-  @media (max-width: 600px) {
-    .social-icons .icon {
-      display: block;
-    }
-    .social-icons .rights {
-      display: none;
-    }
-  }
+}
