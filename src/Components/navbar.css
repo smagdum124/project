@@ -52,21 +52,12 @@
 }
 
 @media (max-width: 600px) {
-  .header {
-    flex-direction: column; /* Arrange items vertically */
-    padding: 1rem; /* Add some padding for spacing */
-  }
-
-  .logo {
-    margin-bottom: 1rem; /* Add margin at the bottom for separation */
-  }
-
-  .social-icons {
-    position: static; /* Remove absolute positioning */
-    margin-top: 1rem; /* Add margin at the top for separation */
-  }
-
+  /* Show icons on small screens */
   .social-icons .icon {
-    margin-left: 0.5rem; /* Adjust margin between icons */
+    display: block;
+  }
+  /* Hide .rights on small screens */
+  .social-icons .rights {
+    display: none;
   }
 }
