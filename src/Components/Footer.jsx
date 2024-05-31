@@ -21,7 +21,7 @@
 
         <div className="social-iconsf">
           <a href="#" className="iconf">
-            <img src={telegram} alt="" className="hover-effect" />
+            <img style={{marginRight:"0.5rem"}}  src={telegram} alt="" className="hover-effect" />
           </a>
           <a href="#" className="iconf">
             <img src={twitter} alt="" className="hover-effect" />

@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: Megatoyaitalic;
-  src: url("../assets/fonts/BD Megatoya Light Italic.ttf");
+  src: url("../assets/fonts/BD\ Megatoya\ Bold\ Italic.ttf");
 }
 
 .future_container {
@@ -39,7 +39,7 @@
 
 .future_content span {
   font-size: 2.5rem;
-  font-weight: lighter;
+  font-weight: 400;
   font-family: Megatoyaitalic;
 }
 

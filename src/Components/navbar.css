@@ -49,14 +49,11 @@
   right: 0; /* Align them to the right */
 }
 
-.social-icons .icon {
-  margin-left: 1rem;
-}
-
 /* Hide .rights class initially */
 .social-icons .rights {
   display: none;
 }
+
 
 @media (max-width: 600px) {
   /* Show icons on small screens */
@@ -69,13 +66,15 @@
   }
   .social-icons {
     position: absolute;
-    top: 123vw;
+    top: 125.5vw;
     right: 25vw;
+    display: flex;
+    
+
   }
   .icon-msg {
     position: absolute;
-    top: 124vw;
-    left: 21vw;
-
+    top: 127vw;
+    left: 27.5vw;
   }
 }

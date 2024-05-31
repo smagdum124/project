@@ -39,10 +39,10 @@ function Achievement() {
       <div className="achievement-main">
         <div className="achievement-img">
           <img className="modelPose" src={pose2} alt="" />
-        <div className="know-more">
-        <img className="know" src={know} alt="" />
-          <span>Know more</span>
-        </div>
+          <div className="know-more">
+            <img className="know" src={know} alt="" />
+            <span>Know more</span>
+          </div>
         </div>
         <div className="achievement-containt">
           <h2 className="achiev-txt2">Already above</h2>
@@ -52,11 +52,15 @@ function Achievement() {
           <div className="achievement-inner">
             <div className="inner-txt">
               <h2>24K</h2>
-              <p>Projects <br /> Launched</p>
+              <p>
+                Projects <br /> Launched
+              </p>
             </div>
             <div className="inner-txt">
-              <h2>2.3M</h2>
-              <p>Members in Community</p>
+              <h2>24K</h2>
+              <p>
+                Members in <br /> Community
+              </p>
             </div>
 
             <div className="img-txt1">

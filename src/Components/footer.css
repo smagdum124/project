@@ -42,10 +42,10 @@
   transform: scale(1.1);
   filter: drop-shadow(0 0 5px #b557fa);
 }
-
+/* 
 .social-iconsf .iconf {
   margin-left: 1rem;
-}
+} */
 
 .rightsf {
   display: none;

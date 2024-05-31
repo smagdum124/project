@@ -213,7 +213,6 @@
   border-radius: 10px;
 }
 
-
 .main-img {
   flex: 1;
   padding-right: 2rem;
@@ -398,12 +397,21 @@ button {
 .know {
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+.know-more span {
+  color: #b557fa;
+  margin-left: 0.5vw;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s; /* Change transition to color for smooth color change effect */
 }
 
-.achievement-img span {
-  color: #b557fa;
-  margin-left: 1vw;
+.know-more span:hover {
+  color: #6b46c1;
 }
+
 .achievement-containt {
   width: 60%;
   padding-left: 2vw;
@@ -434,39 +442,48 @@ button {
 .achievement-inner {
   display: flex;
   margin-top: 14vh;
-  justify-content: space-around;
+  cursor: pointer;
 }
 
 .inner-txt {
-  height: 6vw;
+  height: 5vw;
   width: 14vw;
-  /* background-color: black; */
+  margin-left: 1vw;
   background-image: linear-gradient(to top right, #7c15c5, #0c0b0c);
   border-radius: 20px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: space-around;
+  transition: transform 0.3s ease;
 }
 
+.inner-txt:hover {
+  transform: translateY(-5px);
+}
 .inner-txt h2 {
   color: white;
-  padding: 10px;
 }
 
 .inner-txt p {
   color: white;
-  padding: 0.6vw;
+  font-size: 0.9rem;
 }
 
 .img-txt1 {
-  height: 6vw;
+  height: 5vw;
   width: 6vw;
   background-color: #b557fa;
   border-radius: 20px;
+  margin-left: 1vw;
 }
 
 .img-txt1 img {
-  padding: 25px;
-  width: 2vw;
+  padding: 1.5vw 2vw;
+  width: 1.7vw;
+  transition: transform 0.3s ease;
+}
+.img-txt1:hover{
+  transform: translateY(-5px);
 }
 
 @media (max-width: 600px) {
@@ -509,16 +526,16 @@ button {
   .know {
     left: -5vw;
     position: relative;
-    top: -27vw;
+    top: -24vw;
   }
 
   .achievement-img span {
     position: relative;
-    top: -28vw;
+    top: -25vw;
     left: -3vw;
     margin: 0 auto;
     display: block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #b557fa;
   }
 
@@ -624,12 +641,12 @@ button {
   width: 2vw;
 }
 
-.collab-mail {
-  left: 0px;
-  position: absolute;
-  top: 30px;
-  width: auto;
-}
+  .collab-mail {
+    left: 0px;
+    position: absolute;
+    top: 30px;
+    width: auto;
+  }
 
 .collab_img h3 {
   position: relative;

@@ -19,7 +19,7 @@ function NavBar() {
       </div>
       <div className="social-icons">
         <a href="#" className="icon">
-          <img src={telegram} alt="Telegram" className="hover-effect" />
+          <img style={{marginRight:"0.5rem"}} src={telegram} alt="Telegram" className="hover-effect" />
         </a>
         <a href="#" className="icon">
           <img src={twitter} alt="Twitter" className="hover-effect" />
