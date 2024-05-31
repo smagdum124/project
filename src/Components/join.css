@@ -50,13 +50,16 @@
 
 .join_img {
   width: 20%;
+  display: flex;
+  justify-content: flex-end; /* Align the image to the end of the container */
+  align-items: flex-end; /* Align the image to the bottom of the container */
 }
 
 .join_img img {
-  padding-top: 9.3vw;
-  align-content: center;
   width: 18vw;
+  max-height: 100%; /* Prevent the image from stretching vertically */
 }
+
 
 /* Card styling */
 .join_card {
