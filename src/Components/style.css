@@ -691,14 +691,45 @@ form {
 }
 
 .input_row {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
   gap: 10px;
 }
+/* .input_row2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+.input_row3 {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  gap: 10px;
+} */
 
 .input_group {
   display: flex;
   flex-direction: column;
   flex: 1;
+}
+.grid-item-1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.grid-item-2 {
+  grid-column-start: 4;
+  grid-column-end: 6;
+}
+.grid-row2-item-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.grid-row2-item-3 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.grid-row2-item-3 {
+  grid-column-start: 4;
+  grid-column-end: 6;
 }
 
 .input_group label {
@@ -729,7 +760,7 @@ form {
 
 .button_group button {
   white-space: nowrap;
-  padding: 1em 5em;
+  padding: 1em auto;
   background-color: #b557fa;
   color: white;
   border: none;

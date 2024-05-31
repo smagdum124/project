@@ -46,39 +46,33 @@ function Collaborate() {
         <h2>Let's Collaborate</h2>
         <form action="">
           <div className="input_row">
-            <div className="input_group">
+            <div className="input_group grid-item-1">
               <label htmlFor="name">NAME</label>
               <input id="name" type="text" placeholder="Your Name" />
             </div>
-            <div className="input_group">
+            <div className="input_group grid-item-2">
               <label htmlFor="subject">SUBJECT</label>
               <input id="subject" type="text" placeholder="Choose Subject" />
             </div>
-          </div>
-          <div className="input_row">
-            <div className="input_group">
+
+            <div className="input_group grid-row2-item-1">
               <label htmlFor="email">BEHALF OF</label>
               <input id="email" type="email" placeholder="Personal" />
             </div>
-            <div className="input_group">
+            <div className="input_group grid-row2-item-2">
               <label htmlFor="phone">EMAIL</label>
               <input id="phone" type="text" placeholder="Email Address" />
             </div>
-            <div className="input_group">
+            <div className="input_group grid-row2-item-3">
               <label htmlFor="company">BEHALF OF</label>
               <input id="company" type="text" placeholder="Personal" />
             </div>
-          </div>
-          <div className="input_row">
-            <div className="input_group wide">
+
+            <div className="input_group grid-item-1 wide">
               <label htmlFor="message">MESSAGE</label>
-              <input
-                id="message"
-                type="text"
-                placeholder="Start Typing here"
-              />
+              <input id="message" type="text" placeholder="Start Typing here" />
             </div>
-            <div className="input_group button_group">
+            <div className="input_group  button_group grid-item-2">
               <button type="submit">Submit now </button>
             </div>
           </div>
