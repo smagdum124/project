@@ -194,7 +194,7 @@
   margin: auto;
   padding: 2rem 0;
   border: 1px solid rgb(107, 114, 128);
-  height: 52vh;
+  height: 53vh;
   border-radius: 10px;
 }
 
@@ -304,14 +304,14 @@ button {
   }
 
   .main-img {
-    /* width: 100%; */
+    width: 100%;
     padding-right: 0;
     margin-top: -6rem;
     margin-bottom: 0;
     order: 2;
   }
-  .main-img img{
-    width: 20vw;
+  .main-img img {
+    width: 100%;
   }
   .main-txt {
     width: 90%;
@@ -323,7 +323,7 @@ button {
     padding-right: 2rem;
     width: 24%;
     display: flex;
-    align-items: flex-end; 
+    align-items: flex-end;
   }
 
   .main-img img {
@@ -339,7 +339,7 @@ button {
   padding: 20px;
   width: 91%;
   margin: 2vw auto;
-  height: 80vh;
+  height: auto;
 }
 
 .achievement-txt {
@@ -365,13 +365,13 @@ button {
 
 .modelPose {
   width: 37vw;
-  position: relative;
-  bottom: 30vh;
+  position: absolute;
+  bottom: -15vh;
 }
 
 .know-more {
   position: absolute;
-  top: 45%;
+  top: 86%;
   left: 20%;
   /* transform: translateX(-50%); */
   display: flex;
@@ -383,7 +383,6 @@ button {
   display: flex;
   align-items: center;
 }
-
 
 .achievement-img span {
   color: #b557fa;
@@ -426,7 +425,7 @@ button {
   height: 6vw;
   width: 14vw;
   /* background-color: black; */
-  background-image: linear-gradient(to top right, #7c15c5, #0c0b0c); 
+  background-image: linear-gradient(to top right, #7c15c5, #0c0b0c);
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
@@ -470,6 +469,7 @@ button {
   .achievement-main {
     flex-direction: column;
     align-items: center;
+    height: 70vh;
   }
 
   .achievement-img {
@@ -529,8 +529,7 @@ button {
     width: 61vw;
     height: 18vw;
     margin: 3vw;
-
-}
+  }
 
   .inner-txt h2 {
     padding: 3px 15px;
@@ -564,7 +563,12 @@ button {
     transform: translateY(0);
   }
 }
-
+@media (min-width: 1400px) {
+  /* .collab_img .pose4 {
+    position: absolute;
+    top: 1%; 
+  } */
+}
 
 /* collaborate page  */
 .collaborate_container {
@@ -624,13 +628,14 @@ button {
   /* padding: 0; */
   width: 22.6vw;
   position: absolute;
-  top: 4%; 
+  top: 4%;
   /* margin: 0; */
 }
 
 .collab_form {
   width: 52%;
   position: relative;
+  top: -2vw;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
@@ -712,15 +717,13 @@ form {
   flex: 3;
 }
 #subject {
-  flex: 4; 
+  flex: 4;
 }
-
 
 #email,
 #message {
   flex: 2;
 }
-
 
 #phone,
 #company {
@@ -779,12 +782,11 @@ form {
     margin-left: 0;
   }
 }
-@media (min-width: 1280px){
-  .pose4{
+@media (min-width: 1400px) {
+  .collab_img .pose4 {
     position: absolute;
-    top: 10%;
+    top: 1%;
   }
-
 }
 
 /* logo.css */
