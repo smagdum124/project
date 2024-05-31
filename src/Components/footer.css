@@ -57,7 +57,17 @@
   }
   .rightsf {
     display: block;
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
+    position: absolute;
+    right: 0px;
+    top: 8vw;
+    padding: 2vw 0vw;
+  }
+  .logof a img {
+    position: absolute;
+    top: 8vw;
+    left: 0px;
+    padding: 2vw 0vw;
   }
 }

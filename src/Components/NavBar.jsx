@@ -9,7 +9,7 @@ import "./navbar.css";
 function NavBar() {
   return (
     <div className="header">
-      <a href="#" className="icon">
+      <a href="#" className="icon-msg">
         <img src={message} alt="Message" className="hover-effect" />
       </a>
       <div className="logo">

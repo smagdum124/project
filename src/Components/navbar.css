@@ -21,9 +21,14 @@
   color: white;
   transition: color 0.3s, transform 0.3s, filter 0.3s; /* Add transition for smooth effect */
 }
+.icon-msg {
+  font-size: 1.5rem;
+  color: white;
+  transition: color 0.3s, transform 0.3s, filter 0.3s; /* Add transition for smooth effect */
+}
 
-.icon:hover {
-  color: #B557FA;
+.icon-msg:hover {
+  color: #b557fa;
 }
 
 .hover-effect {
@@ -32,7 +37,9 @@
 
 .hover-effect:hover {
   transform: scale(1.1); /* Scale the image to 110% on hover */
-  filter: drop-shadow(0 0 5px #B557FA); /* Add a shadow effect with the desired color */
+  filter: drop-shadow(
+    0 0 5px #b557fa
+  ); /* Add a shadow effect with the desired color */
 }
 
 .social-icons {
@@ -59,5 +66,16 @@
   /* Hide .rights on small screens */
   .social-icons .rights {
     display: none;
+  }
+  .social-icons {
+    position: absolute;
+    top: 123vw;
+    right: 25vw;
+  }
+  .icon-msg {
+    position: absolute;
+    top: 124vw;
+    left: 21vw;
+
   }
 }

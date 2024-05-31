@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 94%;
-  height: 60vh;
+  height: auto;
   margin: auto;
   display: flex;
   justify-content: space-between;

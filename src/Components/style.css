@@ -99,7 +99,6 @@
   cursor: pointer;
 }
 
-
 .button1 {
   padding: 0.6rem 1.5rem;
   font-size: 1rem;
@@ -110,13 +109,13 @@
   margin-right: 1rem;
   cursor: pointer;
 }
-.button1:hover{
+.button1:hover {
   /* border: solid 1px #b557fa; */
   color: #b557fa;
 }
 
 .button:hover {
-  background-color:transparent;
+  background-color: transparent;
   border: solid 1px #b557fa;
 }
 
@@ -144,7 +143,7 @@
     width: 90%;
     text-align: center;
     padding: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 
   .hero-img {
@@ -208,7 +207,6 @@
 .main-img img {
   width: 100%;
   height: auto;
-  
 }
 
 .main-content {
@@ -286,8 +284,9 @@ button {
 @media (max-width: 600px) {
   .main-container {
     flex-direction: column;
-    height: auto;
+    height: 64vh;
     padding-bottom: 0;
+    /* height: auto; */
   }
 
   .btn-group {
@@ -305,253 +304,267 @@ button {
   }
 
   .main-img {
-    width: 100%;
+    /* width: 100%; */
     padding-right: 0;
-    margin-top: 1rem;
+    margin-top: -6rem;
     margin-bottom: 0;
     order: 2;
   }
+  .main-img img{
+    width: 20vw;
+  }
+  .main-txt {
+    width: 90%;
+  }
 }
 @media (min-width: 1280px) {
-
   .main-img {
     flex: 1;
     padding-right: 2rem;
     width: 24%;
     display: flex;
-    align-items: flex-end; /* Align the image to the bottom */
+    align-items: flex-end; 
   }
 
   .main-img img {
     width: 100%;
     height: auto;
   }
-
 }
-  /* Achievment css */
+/* Achievment css */
+.achievement-container {
+  border: 1px solid #a0aec0;
+  border-radius: 20px;
+  background-color: white;
+  padding: 20px;
+  width: 91%;
+  margin: 2vw auto;
+  height: 80vh;
+}
+
+.achievement-txt {
+  padding-left: 4vw;
+  margin: 0;
+  font-size: 4rem;
+  background: -webkit-linear-gradient(left, black, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  animation: slideIn 1s ease-in-out; /* Animation for heading */
+}
+
+.achievement-main {
+  display: flex;
+  position: relative;
+}
+
+.achievement-img {
+  width: 30%;
+  position: relative;
+}
+
+.modelPose {
+  width: 37vw;
+  position: relative;
+  bottom: 30vh;
+}
+
+.know-more {
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  /* transform: translateX(-50%); */
+  display: flex;
+  align-items: center;
+  animation: slideIn 1s ease-in-out; /* Apply animation */
+}
+
+.know {
+  display: flex;
+  align-items: center;
+}
+
+
+.achievement-img span {
+  color: #b557fa;
+  margin-left: 1vw;
+}
+.achievement-containt {
+  width: 60%;
+  padding-left: 2vw;
+  animation: slideIn 1s ease-in-out; /* Animation for content */
+}
+
+.achiev-txt2,
+.achiev-txt3 {
+  font-size: 5rem;
+  position: relative;
+  line-height: 1;
+  margin: 0px;
+}
+
+.achiev-txt3 {
+  font-family: Megatoyaitalic;
+}
+
+.achiev-txt3 span {
+  font-weight: bold;
+  font-family: Megatoya;
+}
+
+.highlight {
+  color: #b557fa;
+}
+
+.achievement-inner {
+  display: flex;
+  margin-top: 14vh;
+  justify-content: space-around;
+}
+
+.inner-txt {
+  height: 6vw;
+  width: 14vw;
+  /* background-color: black; */
+  background-image: linear-gradient(to top right, #7c15c5, #0c0b0c); 
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner-txt h2 {
+  color: white;
+  padding: 10px;
+}
+
+.inner-txt p {
+  color: white;
+  padding: 0.6vw;
+}
+
+.img-txt1 {
+  height: 6vw;
+  width: 6vw;
+  background-color: #b557fa;
+  border-radius: 20px;
+}
+
+.img-txt1 img {
+  padding: 25px;
+  width: 2vw;
+}
+
+@media (max-width: 600px) {
   .achievement-container {
-    border: 1px solid #a0aec0;
-    border-radius: 20px;
-    background-color: white;
-    padding: 20px;
-    width: 91%;
-    margin: 2vw auto;
-    height: 80vh;
+    padding: 10px 0;
+    margin: 10px auto;
+    width: 95%;
   }
 
   .achievement-txt {
-    padding-left: 4vw;
-    margin: 0;
-    font-size: 4rem;
-    background: -webkit-linear-gradient(left, black, white);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    animation: slideIn 1s ease-in-out; /* Animation for heading */
+    padding-left: 0;
+    text-align: center;
+    font-size: 3rem;
   }
 
   .achievement-main {
-    display: flex;
-    position: relative;
+    flex-direction: column;
+    align-items: center;
   }
 
   .achievement-img {
-    width: 30%;
-    position: relative;
+    width: 70%;
+    text-align: center;
   }
 
   .modelPose {
-    width: 37vw;
+    width: 123%;
+    bottom: 0;
     position: relative;
-    bottom: 30vh;
+    bottom: 28vw;
+    transform: translateX(-44px);
+  }
+
+  .know-more {
+    top: auto;
+    bottom: -15vw;
   }
 
   .know {
+    left: -5vw;
     position: relative;
-    top: -50%;
-    left: 20%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    animation: slideIn 1s ease-in-out; /* Animation for "Know more" image */
-  }
-
-  .know span {
-    animation: slideIn 1s ease-in-out; /* Animation for "Know more" span */
+    top: -27vw;
   }
 
   .achievement-img span {
     position: relative;
-    top: -54%;
-    left: 27%;
+    top: -28vw;
+    left: -3vw;
+    margin: 0 auto;
+    display: block;
+    font-size: 2rem;
     color: #b557fa;
   }
 
   .achievement-containt {
-    width: 60%;
-    padding-left: 2vw;
-    animation: slideIn 1s ease-in-out; /* Animation for content */
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+    position: relative;
+    top: -46vw;
   }
 
   .achiev-txt2,
   .achiev-txt3 {
-    font-size: 5rem;
-    position: relative;
-    line-height: 1;
-    margin: 0px;
-  }
-
-  .achiev-txt3 {
-    font-family: Megatoyaitalic;
-  }
-
-  .achiev-txt3 span {
-    font-weight: bold;
-    font-family: Megatoya;
-  }
-
-  .highlight {
-    color: #b557fa;
+    font-size: 3rem;
+    text-align: center;
   }
 
   .achievement-inner {
-    display: flex;
-    margin-top: 14vh;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 18vw;
   }
-
   .inner-txt {
-    height: 6vw;
-    width: 14vw;
-    background-color: black;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-  }
+    width: 61vw;
+    height: 18vw;
+    margin: 3vw;
+
+}
 
   .inner-txt h2 {
-    color: white;
-    padding: 10px;
+    padding: 3px 15px;
   }
 
   .inner-txt p {
-    color: white;
-    padding: 0.6vw;
+    padding: 3px 35px;
   }
 
   .img-txt1 {
-    height: 6vw;
-    width: 6vw;
-    background-color: #b557fa;
-    border-radius: 20px;
+    display: none;
   }
+}
 
-  .img-txt1 img {
-    padding: 25px;
-    width: 2vw;
+/* Add animation for visible content */
+.visible .achievement-containt,
+.visible .achievement-txt,
+.visible .know-more,
+.visible .know span {
+  animation: slideIn 1s ease-in-out;
+}
+
+/* Define animation keyframes */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
   }
-
-  @media (max-width: 600px) {
-    .achievement-container {
-      padding: 10px 0;
-      margin: 10px auto;
-      width: 95%;
-    }
-
-    .achievement-txt {
-      padding-left: 0;
-      text-align: center;
-      font-size: 3rem;
-    }
-
-    .achievement-main {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .achievement-img {
-      width: 70%;
-      text-align: center;
-    }
-
-    .modelPose {
-      width: 123%;
-      bottom: 0;
-      position: relative;
-      bottom: 28vw;
-      transform: translateX(-44px);
-    }
-
-    .know {
-      left: 35px;
-      position: relative;
-      top: -81px;
-    }
-
-    .achievement-img span {
-      position: relative;
-      top: -28vw;
-      left: 14px;
-      margin: 0 auto;
-      display: block;
-      font-size: 2rem;
-    }
-
-    .achievement-containt {
-      width: 100%;
-      padding-left: 0;
-      text-align: center;
-      position: relative;
-      top: -64vw;
-    }
-
-    .achiev-txt2,
-    .achiev-txt3 {
-      font-size: 3rem;
-      text-align: center;
-    }
-
-    .achievement-inner {
-      flex-direction: column;
-      align-items: center;
-      margin-top: 18vw;
-    }
-    .inner-txt {
-      width: 61vw;
-      height: 18vw;
-      margin: 3vw;
-    }
-    .inner-txt h2 {
-      padding: 3px 15px;
-    }
-
-    .inner-txt p {
-      padding: 3px 35px;
-    }
-
-    .img-txt1 {
-      display: none;
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
 
-  /* Add animation for visible content */
-  .visible .achievement-containt,
-  .visible .achievement-txt,
-  .visible .know span {
-    animation: slideIn 1s ease-in-out;
-  }
-
-  /* Define animation keyframes */
-  @keyframes slideIn {
-    0% {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
 
 /* collaborate page  */
 .collaborate_container {
@@ -559,7 +572,8 @@ button {
   border: 1px solid #a0aec0;
   border-radius: 20px;
   padding: 20px;
-  height: 67vh;
+  /* height: 67vh; */
+  height: auto;
   width: 91%;
   margin: 2vw auto;
   background-color: white;
@@ -607,15 +621,15 @@ button {
 }
 
 .collab_img .pose4 {
-  padding: 0;
-  width: 25vw;
+  /* padding: 0; */
+  width: 22.6vw;
   position: absolute;
-  bottom: 0; /* Ensure it touches the bottom */
-  margin: 0;
+  top: 4%; 
+  /* margin: 0; */
 }
 
 .collab_form {
-  width: 45%;
+  width: 52%;
   position: relative;
   opacity: 0;
   transform: translateY(20px);
@@ -697,21 +711,21 @@ form {
 #name {
   flex: 3;
 }
+#subject {
+  flex: 4; 
+}
+
 
 #email,
 #message {
   flex: 2;
 }
 
-#subject {
-  flex: 4; /* Increased width for the subject input */
-}
 
 #phone,
 #company {
   flex: 3;
 }
-
 
 /* Media query for small devices */
 @media (max-width: 600px) {
@@ -764,6 +778,13 @@ form {
     margin-top: 0.5em;
     margin-left: 0;
   }
+}
+@media (min-width: 1280px){
+  .pose4{
+    position: absolute;
+    top: 10%;
+  }
+
 }
 
 /* logo.css */

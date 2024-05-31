@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import mainImg from "../assets/Group 9181.png";
-import './style.css';
+import "./style.css";
 
 function MainSection() {
   const contentRef = useRef(null);
@@ -9,9 +9,9 @@ function MainSection() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          contentRef.current.classList.add('visible');
+          contentRef.current.classList.add("visible");
         } else {
-          contentRef.current.classList.remove('visible');
+          contentRef.current.classList.remove("visible");
         }
       },
       { threshold: 0.1 }
@@ -31,7 +31,7 @@ function MainSection() {
   return (
     <div className="main-container">
       <div className="main-img">
-        <img src={mainImg} alt="" />
+        <img  src={mainImg} alt="" />
       </div>
       <div className="main-content" ref={contentRef}>
         <div className="btn-group">
