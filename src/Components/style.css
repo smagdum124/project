@@ -183,6 +183,21 @@
     max-width: 100%;
   }
 }
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate {
+  animation: float 1s ease-in-out forwards;
+}
 
 /* main section css  */
 

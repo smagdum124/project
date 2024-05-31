@@ -179,6 +179,8 @@
 
   .future_img {
     order: 3;
+    position: relative;
+    bottom: -9px;
   }
 
   .future_content h2 {

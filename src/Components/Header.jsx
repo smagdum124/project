@@ -1,10 +1,37 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { FiArrowDownRight } from "react-icons/fi";
 import hero from "../assets/Frame 9064.png";
 import NavBar from "./NavBar";
 import LogoComp from "./LogoComp";
 
 function Header() {
+  const [isVisible, setIsVisible] = useState(false);
+  const heroRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5 // Change the threshold as needed
+      }
+    );
+
+    if (heroRef.current) {
+      observer.observe(heroRef.current);
+    }
+
+    // Clean up the observer
+    return () => {
+      if (heroRef.current) {
+        observer.unobserve(heroRef.current);
+      }
+    };
+  }, []);
+
   return (
     <>
       <div className="container">
@@ -24,8 +51,12 @@ function Header() {
           </div>
 
           {/* Right side section */}
-          <div className="hero-img">
-            <img src={hero} alt="Hero" />
+          <div className="hero-img" ref={heroRef}>
+            <img
+              src={hero}
+              alt="Hero"
+              className={isVisible ? "animate" : ""}
+            />
           </div>
         </div>
       </div>
